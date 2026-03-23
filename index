@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossier Institucional 26/27 - SM Academia</title>
+    <style>
+        :root {
+            --primary-color: #1a3a5a;
+            --secondary-color: #4a90e2;
+            --accent-color: #f39c12;
+            --text-color: #333;
+            --bg-light: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            margin: 10mm auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            page-break-after: always;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .header {
+            border-bottom: 3px solid var(--primary-color);
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+            text-transform: uppercase;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .mec-box {
+            background: var(--primary-color);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .mec-item b {
+            color: var(--accent-color);
+            font-size: 1.2rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .footer-contact {
+            position: absolute;
+            bottom: 20mm;
+            width: 80%;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        .highlight {
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        @media print {
+            body { background: none; }
+            .page { margin: 0; box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <div class="hero">
+            <div style="font-size: 2rem; font-weight: bold; color: #666;">SM ACADEMIA</div>
+            <h1>DOSSIER INSTITUCIONAL</h1>
+            <p>CURSO ESCOLAR 2026 / 2027</p>
+            <hr style="width: 50px; border: 2px solid var(--accent-color);">
+            <div style="margin-top: 50px; font-style: italic;">
+                "Formando personas a través de la excelencia en el ocio y el tiempo libre"
+            </div>
+        </div>
+        
+        <div style="margin-top: 100px; text-align: center;">
+            <h3>Propuesta Estratégica para Centros Educativos y AMPAS</h3>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="header">
+            <span>SM ACADEMIA | PROPUESTA 26-27</span>
+        </div>
+        
+        <h2>Carta del Director</h2>
+        <p>En <b>SM Academia</b>, nuestra misión es transformar las actividades extraescolares en una herramienta educativa de alto impacto. No somos una empresa de custodia; somos una <b>academia de formación</b> centrada en el desarrollo integral del alumno.</p>
+
+        <div class="mec-box">
+            <h3>Nuestro ADN: Metodología MEC</h3>
+            <div class="mec-item"><b>[M] MOTIVACIÓN:</b> Generamos entornos de aprendizaje positivos donde el alumno se siente protagonista.</div>
+            <div class="mec-item"><b>[E] ESFUERZO:</b> Premiamos la superación y la persistencia por encima del resultado inmediato.</div>
+            <div class="mec-item"><b>[C] CONSTANCIA:</b> Creamos hábitos de disciplina y compromiso que perduran para toda la vida.</div>
+        </div>
+
+        <h3>Valores Diferenciales</h3>
+        <ul>
+            <li><b>Profesionalismo:</b> Personal cualificado, uniformado y con formación continua.</li>
+            <li><b>Administración sin fricción:</b> Gestión total de cobros y seguros por nuestra parte.</li>
+            <li><b>Comunicación Transparente:</b> Informes de progreso y atención directa a las familias.</li>
+        </ul>
+    </div>
+
+    <div class="page">
+        <div class="header">
+            <span>CATÁLOGO DE ACTIVIDADES</span>
+        </div>
+        
+        <h2>Servicios Propuestos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Actividad</th>
+                    <th>Descripción y Objetivos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>Recogida Temprana / Tardía</b></td>
+                    <td>Conciliación familiar con dinámicas de activación matinal y hábitos de orden al cierre.</td>
+                </tr>
+                <tr>
+                    <td><b>Multideporte</b></td>
+                    <td>Conocimiento de diversas disciplinas para un desarrollo motor completo.</td>
+                </tr>
+                <tr>
+                    <td><b style="color: #d35400;">Multideporte Adaptado (NEE)</b></td>
+                    <td><b>Programa Inclusivo:</b> Adaptación metodológica para alumnos con Necesidades Educativas Especiales. Inclusión real garantizada.</td>
+                </tr>
+                <tr>
+                    <td><b>Baloncesto</b></td>
+                    <td>Técnica individual, coordinación y trabajo en equipo.</td>
+                </tr>
+                <tr>
+                    <td><b>Inglés Extraescolar</b></td>
+                    <td>Aprendizaje lúdico a través de juegos y canciones. Foco en la expresión oral.</td>
+                </tr>
+                <tr>
+                    <td><b>Baile</b></td>
+                    <td>Expresión corporal, ritmo y creatividad musical.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Compromiso de Calidad</h3>
+        <p>Garantizamos la entrega de las instalaciones en perfecto estado y el cumplimiento estricto de las ratios y protocolos de seguridad del centro.</p>
+    </div>
+
+    <div class="page" style="text-align: center;">
+        <div style="margin-top: 150px;">
+            <h2>¿Comenzamos a trabajar juntos?</h2>
+            <p>Estamos a su entera disposición para una reunión presencial o virtual.</p>
+            
+            <div style="margin-top: 40px; border: 1px solid #ddd; display: inline-block; padding: 30px; border-radius: 10px;">
+                <p><strong>Samy Martín</strong><br>Director General - SM Academia</p>
+                <p>📧 academiasmfutbol@outlook.es</p>
+                <p>📱 [Inserta tu número de WhatsApp]</p>
+                <p>🌐 [Tu sitio web]</p>
+            </div>
+        </div>
+
+        <div class="footer-contact">
+            SM ACADEMIA 2026 - Eficiencia y Resultados en Educación Infantil y Juvenil.
+        </div>
+    </div>
+
+</body>
+</html>
