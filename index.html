@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SM ACADEMIA | Dossier Extraescolares 26/27</title>
     
-    <meta name="description" content="Propuesta vanguardista de servicios educativos y tecnológicos para el curso 26/27. Metodología MEC.">
+    <meta name="description" content="Propuesta de servicios educativos, deportivos y tecnológicos 26/27. Innovación con IA y actividades de élite.">
     <meta property="og:title" content="SM ACADEMIA - Dossier 2026/2027">
     <meta property="og:image" content="https://academiasmfutbol2.wordpress.com/wp-content/uploads/2023/10/cropped-cropped-22984-cropped-logo_academiasm_fondotransparente.png">
 
@@ -13,16 +13,16 @@
         :root {
             --blanco: #ffffff;
             --negro: #000000;
-            --gris-claro: #f9f9f9;
+            --gris-claro: #f4f4f4;
             --gris-medio: #cccccc;
             --verde-sm: #2e7d32;
             --verde-wsp: #25d366;
-            --transition: all 0.3s ease;
+            --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
         html { scroll-behavior: smooth; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--blanco); color: var(--negro); line-height: 1.6; }
+        body { font-family: var(--font-main); background: var(--blanco); color: var(--negro); line-height: 1.6; }
 
         /* HEADER */
         header {
@@ -35,52 +35,54 @@
 
         /* HERO */
         .hero { padding: 80px 5%; text-align: center; background: var(--gris-claro); border-bottom: 1px solid var(--gris-medio); }
-        .hero h1 { font-size: clamp(2rem, 6vw, 3.5rem); margin-bottom: 10px; letter-spacing: -1px; }
-        .hero p { color: var(--verde-sm); font-weight: bold; text-transform: uppercase; letter-spacing: 2px; }
+        .hero h1 { font-size: clamp(1.8rem, 5vw, 3rem); margin-bottom: 10px; text-transform: uppercase; }
+        .hero p { color: var(--verde-sm); font-weight: bold; letter-spacing: 2px; }
 
         /* CONTAINER */
-        .container { width: 90%; max-width: 1100px; margin: 0 auto; padding: 60px 0; }
-        .section-title { font-size: 1.8rem; margin-bottom: 30px; border-left: 5px solid var(--verde-sm); padding-left: 15px; text-transform: uppercase; }
+        .container { width: 90%; max-width: 1100px; margin: 0 auto; padding: 40px 0; }
+        .section-title { font-size: 1.5rem; margin-bottom: 25px; border-left: 5px solid var(--verde-sm); padding-left: 15px; text-transform: uppercase; }
 
         /* MEC GRID */
-        .mec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 60px; }
-        .mec-card { padding: 30px; border: 1px solid var(--gris-medio); transition: var(--transition); }
-        .mec-card:hover { border-color: var(--negro); background: #fdfdfd; transform: translateY(-3px); }
-        .mec-card h3 { color: var(--verde-sm); margin-bottom: 10px; }
+        .mec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 50px; }
+        .mec-card { padding: 25px; border: 1px solid var(--gris-medio); transition: all 0.3s ease; }
+        .mec-card h3 { color: var(--verde-sm); margin-bottom: 10px; font-size: 1.1rem; }
 
         /* TABLA */
-        .table-wrapper { overflow-x: auto; border: 1px solid var(--gris-medio); border-radius: 4px; }
-        table { width: 100%; border-collapse: collapse; min-width: 700px; }
-        th { background: var(--negro); color: var(--blanco); padding: 15px; text-align: left; font-size: 0.8rem; text-transform: uppercase; }
-        td { padding: 15px; border-bottom: 1px solid #eee; font-size: 0.95rem; }
-        .row-highlight { background-color: #f0f7f0; font-weight: bold; }
-        .badge-new { background: var(--verde-sm); color: white; padding: 2px 8px; border-radius: 10px; font-size: 0.7rem; margin-left: 5px; }
+        .table-wrapper { overflow-x: auto; border: 1px solid var(--gris-medio); margin-bottom: 40px; }
+        table { width: 100%; border-collapse: collapse; min-width: 800px; }
+        th { background: var(--negro); color: var(--blanco); padding: 12px; text-align: left; font-size: 0.75rem; text-transform: uppercase; }
+        td { padding: 12px; border-bottom: 1px solid #eee; font-size: 0.9rem; }
+        
+        /* ESTILOS DE FILAS */
+        .row-ia { background-color: #f0f7f0; font-weight: bold; }
+        .row-nee { background-color: #fff9f0; font-weight: bold; }
+        .badge { padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; color: white; margin-left: 5px; text-transform: uppercase; }
+        .bg-new { background: var(--verde-sm); }
+        .bg-club { background: var(--negro); }
 
         /* CONTACTO */
-        .contact-section { background: var(--negro); color: var(--blanco); padding: 60px 5%; text-align: center; margin-top: 40px; }
-        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 30px; }
-        .contact-item a { color: var(--blanco); text-decoration: none; font-size: 1.1rem; }
-        .contact-item strong { color: var(--verde-sm); display: block; font-size: 0.8rem; margin-bottom: 5px; }
+        .contact-box { background: var(--negro); color: var(--blanco); padding: 50px 5%; text-align: center; }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px; }
+        .contact-item a { color: var(--blanco); text-decoration: none; font-weight: bold; }
+        .contact-item small { color: var(--verde-sm); display: block; margin-bottom: 5px; }
 
         /* WSP POPUP */
         .wsp-popup {
-            position: fixed; bottom: -150px; right: 20px; width: 320px;
-            background: white; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            z-index: 2000; transition: bottom 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            overflow: hidden;
+            position: fixed; bottom: -150px; right: 20px; width: 300px;
+            background: white; border-radius: 10px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            z-index: 2000; transition: bottom 0.5s ease; overflow: hidden;
         }
         .wsp-popup.active { bottom: 20px; }
-        .wsp-head { background: #075e54; color: white; padding: 15px; display: flex; align-items: center; gap: 10px; position: relative; }
-        .wsp-close { position: absolute; top: 10px; right: 10px; cursor: pointer; opacity: 0.7; }
-        .wsp-body { padding: 20px; background: #e5ddd5; }
-        .wsp-bubble { background: white; padding: 10px; border-radius: 0 10px 10px 10px; font-size: 0.9rem; position: relative; }
-        .wsp-footer { padding: 15px; background: #e5ddd5; text-align: center; }
-        .wsp-btn { background: var(--verde-wsp); color: white; padding: 10px 20px; border-radius: 25px; display: inline-block; font-weight: bold; text-decoration: none; }
+        .wsp-head { background: #075e54; color: white; padding: 12px; display: flex; align-items: center; gap: 10px; }
+        .wsp-body { padding: 15px; background: #e5ddd5; font-size: 0.85rem; }
+        .wsp-footer { padding: 10px; background: #e5ddd5; text-align: center; }
+        .wsp-btn { background: var(--verde-wsp); color: white; padding: 8px 15px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 0.8rem; display: inline-block; }
+        .close-btn { position: absolute; top: 10px; right: 10px; cursor: pointer; color: white; font-weight: bold; }
 
-        footer { text-align: center; padding: 40px; font-size: 0.8rem; color: var(--gris-medio); }
+        footer { text-align: center; padding: 30px; font-size: 0.7rem; color: var(--gris-medio); border-top: 1px solid #eee; }
 
         @media (max-width: 600px) {
-            header { flex-direction: column; gap: 10px; }
+            header { flex-direction: column; text-align: center; gap: 10px; }
             .wsp-popup { width: 90%; right: 5%; }
         }
     </style>
@@ -88,13 +90,13 @@
 <body>
 
     <header>
-        <img src="https://academiasmfutbol2.wordpress.com/wp-content/uploads/2023/10/cropped-cropped-22984-cropped-logo_academiasm_fondotransparente.png" alt="Logo SM" class="logo">
+        <img src="https://academiasmfutbol2.wordpress.com/wp-content/uploads/2023/10/cropped-cropped-22984-cropped-logo_academiasm_fondotransparente.png" alt="SM Academia" class="logo">
         <div class="header-tag">SM ACADEMIA<br>CURSO 2026/27</div>
     </header>
 
     <section class="hero">
-        <p>Liderazgo Educativo y Tecnológico</p>
-        <h1>ALINEADOS CON EL FUTURO</h1>
+        <p>Formación de Élite & Vanguardia</p>
+        <h1>DOSSIER DE SERVICIOS</h1>
     </section>
 
     <main class="container">
@@ -103,101 +105,123 @@
         <div class="mec-grid">
             <div class="mec-card">
                 <h3>[M] Motivación</h3>
-                <p>Convertimos el aprendizaje en el mejor momento del día para el alumno.</p>
+                <p>Ambiente positivo para que el alumno lidere su propio aprendizaje.</p>
             </div>
             <div class="mec-card">
                 <h3>[E] Esfuerzo</h3>
-                <p>Fomentamos la superación personal como motor de crecimiento técnico.</p>
+                <p>Valoramos la superación y el compromiso por encima del resultado.</p>
             </div>
             <div class="mec-card">
                 <h3>[C] Constancia</h3>
-                <p>Hábitos sólidos y disciplina para la vida cotidiana y el aula.</p>
+                <p>Disciplina y hábitos sólidos para el éxito escolar y personal.</p>
             </div>
         </div>
 
-        <h2 class="section-title">Propuesta de Servicios 26/27</h2>
+        <h2 class="section-title">Oferta Académica 26/27</h2>
         <div class="table-wrapper">
             <table>
                 <thead>
                     <tr>
-                        <th>ÁREA</th>
-                        <th>ACTIVIDAD</th>
-                        <th>ENFOQUE ESTRATÉGICO</th>
+                        <th>Categoría</th>
+                        <th>Actividad</th>
+                        <th>Descripción Específica</th>
+                        <th>Observaciones</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Conciliación</td>
                         <td>Recogida Temprana / Tardía</td>
-                        <td>Hábitos de orden y preparación para la jornada.</td>
+                        <td>Activación matinal y hábitos de orden.</td>
+                        <td>-</td>
                     </tr>
-                    <tr class="row-highlight">
-                        <td><strong>Inclusión</strong></td>
-                        <td><strong>Multideporte Adaptado (NEE)</strong></td>
-                        <td>Atención especializada para una integración real.</td>
+                    <tr class="row-ia">
+                        <td><strong>Tecnología</strong></td>
+                        <td><strong>IA Educativa</strong></td>
+                        <td>Generación de herramientas de estudio y juegos con IA.</td>
+                        <td><span class="badge bg-new">Exclusivo SM</span></td>
+                    </tr>
+                    <tr class="row-nee">
+                        <td>Inclusión</td>
+                        <td>Multideporte Adaptado (NEE)</td>
+                        <td>Integración real para alumnos con necesidades especiales.</td>
+                        <td>Personal titulado</td>
                     </tr>
                     <tr>
-                        <td>Deporte</td>
+                        <td>Deportes</td>
                         <td>Baloncesto / Multideporte</td>
-                        <td>Desarrollo motor y valores de equipo.</td>
+                        <td>Coordinación, técnica y valores de equipo.</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Deportes</td>
+                        <td>Hockey</td>
+                        <td>Iniciación al patinaje y control del stick.</td>
+                        <td><span class="badge bg-club">Nuevo</span></td>
+                    </tr>
+                    <tr>
+                        <td>Especializado</td>
+                        <td>Artes Marciales</td>
+                        <td>Disciplina, defensa personal y psicomotricidad.</td>
+                        <td><span class="badge bg-club">Tarifa Club</span></td>
+                    </tr>
+                    <tr>
+                        <td>Artística</td>
+                        <td>Baile</td>
+                        <td>Expresión corporal, ritmo y creatividad.</td>
+                        <td>-</td>
                     </tr>
                     <tr>
                         <td>Creatividad</td>
-                        <td>Manualidades / Art-SM <span class="badge-new">NUEVO</span></td>
-                        <td>Desarrollo de la motricidad fina y expresión artística.</td>
-                    </tr>
-                    <tr class="row-highlight">
-                        <td><strong>Tecnología</strong></td>
-                        <td><strong>IA Educativa & Hábitos</strong> <span class="badge-new">ESTRELLA</span></td>
-                        <td>Uso de IA para generar juegos lúdicos y potenciar el estudio.</td>
+                        <td>Manualidades</td>
+                        <td>Taller de motricidad fina y artes plásticas.</td>
+                        <td>-</td>
                     </tr>
                     <tr>
                         <td>Idiomas</td>
                         <td>Inglés Extraescolar</td>
-                        <td>Dinámicas 100% conversacionales y activas.</td>
+                        <td>Aprendizaje lúdico y 100% conversacional.</td>
+                        <td>-</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </main>
 
-    <section class="contact-section">
-        <h2>¿PROFESIONALIZAMOS SU CENTRO?</h2>
+    <section class="contact-box">
+        <h2>CONTACTO DIRECTO</h2>
         <div class="contact-grid">
-            <div class="contact-item"><strong>WhatsApp Directo</strong><a href="tel:+34625468296">625 46 82 96</a></div>
-            <div class="contact-item"><strong>Email</strong><a href="mailto:academiasmfutbol@outlook.es">academiasmfutbol@outlook.es</a></div>
-            <div class="contact-item"><strong>Web</strong><a href="https://academiasmfutbol.com" target="_blank">academiasmfutbol.com</a></div>
+            <div class="contact-item"><small>WhatsApp</small><a href="tel:+34625468296">625 46 82 96</a></div>
+            <div class="contact-item"><small>Email</small><a href="mailto:academiasmfutbol@outlook.es">academiasmfutbol@outlook.es</a></div>
+            <div class="contact-item"><small>Web</small><a href="https://academiasmfutbol.com" target="_blank">academiasmfutbol.com</a></div>
         </div>
     </section>
 
-    <footer>&copy; 2026 SM ACADEMIA | Formación de Élite</footer>
+    <footer>&copy; 2026 SM ACADEMIA | Director Samy Martín</footer>
 
-    <div id="popupWsp" class="wsp-popup">
+    <div id="wspPopup" class="wsp-popup">
         <div class="wsp-head">
-            <div style="background:white; border-radius:50%; width:35px; height:35px; color:#075e54; display:flex; align-items:center; justify-content:center; font-weight:bold;">SM</div>
-            <div><strong>Samy Martín</strong><br><small>En línea</small></div>
-            <span class="wsp-close" onclick="closePopup()">×</span>
+            <div style="background:white; border-radius:50%; width:30px; height:30px; color:#075e54; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:10px;">SM</div>
+            <div style="font-size: 14px; font-weight: bold;">Samy Martín</div>
+            <span class="close-btn" onclick="closePopup()">×</span>
         </div>
         <div class="wsp-body">
-            <div class="wsp-bubble">
-                Hola 👋, soy Samy. ¿Quieres que veamos cómo implementar la **IA Educativa** o el resto de actividades en tu centro para el próximo curso?
-            </div>
+            Hola 👋. He visto que te interesa la **IA Educativa** o las nuevas actividades de **Artes Marciales/Hockey**. ¿Hablamos?
         </div>
         <div class="wsp-footer">
-            <a href="https://wa.me/34625468296?text=Hola%20Samy,%20me%20interesa%20la%20propuesta%20de%20IA%20Educativa%20y%20extraescolares%2026/27" class="wsp-btn" target="_blank">Escribir ahora</a>
+            <a href="https://wa.me/34625468296?text=Hola%20Samy,%20me%20gustaría%20saber%20más%20sobre%20el%20dossier%2026/27%20y%20las%20nuevas%20actividades." class="wsp-btn" target="_blank">Abrir Chat</a>
         </div>
     </div>
 
     <script>
         window.addEventListener('load', function() {
             setTimeout(function() {
-                document.getElementById('popupWsp').classList.add('active');
+                document.getElementById('wspPopup').classList.add('active');
             }, 4000);
         });
         function closePopup() {
-            document.getElementById('popupWsp').classList.remove('active');
+            document.getElementById('wspPopup').classList.remove('active');
         }
     </script>
-
 </body>
 </html>
